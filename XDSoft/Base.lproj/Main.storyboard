@@ -1,24 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XDSoft" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q2-2w-n9X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="79"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Qt-cb-ZRl">
+                                        <rect key="frame" x="28" y="20" width="162" height="39"/>
+                                        <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="162" id="eMd-Q0-nFN"/>
+                                        </constraints>
+                                        <state key="normal" title="Простые числа">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-Yw-856">
+                                        <rect key="frame" x="228" y="20" width="163" height="39"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="163" id="uJl-fv-BVA"/>
+                                        </constraints>
+                                        <state key="normal" title="Числа Фибоначчи">
+                                            <color key="titleColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstItem="1Qt-cb-ZRl" firstAttribute="leading" secondItem="4q2-2w-n9X" secondAttribute="leading" constant="28" id="ANz-xP-qQe"/>
+                                    <constraint firstAttribute="height" constant="79" id="NDP-hs-UIs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ji9-Yw-856" secondAttribute="bottom" constant="20" symbolic="YES" id="fnL-i9-B0d"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ji9-Yw-856" secondAttribute="trailing" constant="23" id="iFS-cE-0u1"/>
+                                    <constraint firstItem="1Qt-cb-ZRl" firstAttribute="top" secondItem="4q2-2w-n9X" secondAttribute="top" constant="20" symbolic="YES" id="iRA-Px-ogx"/>
+                                    <constraint firstItem="Ji9-Yw-856" firstAttribute="top" secondItem="4q2-2w-n9X" secondAttribute="top" constant="20" symbolic="YES" id="oD2-0j-0PC"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Qt-cb-ZRl" secondAttribute="bottom" constant="20" symbolic="YES" id="oS3-aM-MFM"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nPr-rE-7Og">
+                                <rect key="frame" x="0.0" y="123" width="414" height="739"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2m1-ea-Ppr">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4q2-2w-n9X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Uq-pc-ZoD"/>
+                            <constraint firstItem="nPr-rE-7Og" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DEA-w7-wHc"/>
+                            <constraint firstItem="4q2-2w-n9X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="GT1-LI-bTT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nPr-rE-7Og" secondAttribute="bottom" id="KFs-zm-e4m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPr-rE-7Og" secondAttribute="trailing" id="hUV-Na-fOw"/>
+                            <constraint firstItem="nPr-rE-7Og" firstAttribute="top" secondItem="4q2-2w-n9X" secondAttribute="bottom" id="haq-WH-qjF"/>
+                            <constraint firstItem="4q2-2w-n9X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iZA-0p-I2w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="nPr-rE-7Og" id="9jv-eh-t6o"/>
+                        <outlet property="fibonacciNumbersButton" destination="Ji9-Yw-856" id="bb0-CE-c3t"/>
+                        <outlet property="primeNumbersButton" destination="1Qt-cb-ZRl" id="JG2-pN-lWg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="64.955357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

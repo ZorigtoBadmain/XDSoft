@@ -13,6 +13,9 @@
 		3572011427B47D7C00539B59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3572011227B47D7C00539B59 /* Main.storyboard */; };
 		3572011627B47D8900539B59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3572011527B47D8900539B59 /* Assets.xcassets */; };
 		3572011927B47D8900539B59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3572011727B47D8900539B59 /* LaunchScreen.storyboard */; };
+		3572013527B4830300539B59 /* NumbersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3572013327B4830300539B59 /* NumbersCell.swift */; };
+		3572013627B4830300539B59 /* NumbersCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3572013427B4830300539B59 /* NumbersCell.xib */; };
+		3572013A27B4842600539B59 /* CompositionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3572013927B4842600539B59 /* CompositionLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		3572011527B47D8900539B59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3572011827B47D8900539B59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3572011A27B47D8900539B59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3572013327B4830300539B59 /* NumbersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumbersCell.swift; sourceTree = "<group>"; };
+		3572013427B4830300539B59 /* NumbersCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumbersCell.xib; sourceTree = "<group>"; };
+		3572013927B4842600539B59 /* CompositionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		3572010B27B47D7C00539B59 /* XDSoft */ = {
 			isa = PBXGroup;
 			children = (
+				3572013827B483FD00539B59 /* CompositionLayout */,
+				3572013227B4823800539B59 /* Cells */,
 				3572010C27B47D7C00539B59 /* AppDelegate.swift */,
 				3572010E27B47D7C00539B59 /* SceneDelegate.swift */,
 				3572011027B47D7C00539B59 /* ViewController.swift */,
@@ -65,6 +73,23 @@
 				3572011A27B47D8900539B59 /* Info.plist */,
 			);
 			path = XDSoft;
+			sourceTree = "<group>";
+		};
+		3572013227B4823800539B59 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3572013327B4830300539B59 /* NumbersCell.swift */,
+				3572013427B4830300539B59 /* NumbersCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3572013827B483FD00539B59 /* CompositionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3572013927B4842600539B59 /* CompositionLayout.swift */,
+			);
+			path = CompositionLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3572013627B4830300539B59 /* NumbersCell.xib in Resources */,
 				3572011927B47D8900539B59 /* LaunchScreen.storyboard in Resources */,
 				3572011627B47D8900539B59 /* Assets.xcassets in Resources */,
 				3572011427B47D7C00539B59 /* Main.storyboard in Resources */,
@@ -137,7 +163,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3572013527B4830300539B59 /* NumbersCell.swift in Sources */,
 				3572011127B47D7C00539B59 /* ViewController.swift in Sources */,
+				3572013A27B4842600539B59 /* CompositionLayout.swift in Sources */,
 				3572010D27B47D7C00539B59 /* AppDelegate.swift in Sources */,
 				3572010F27B47D7C00539B59 /* SceneDelegate.swift in Sources */,
 			);
