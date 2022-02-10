@@ -84,7 +84,6 @@ class ViewController: UIViewController {
         return sequence
     }
 
-    
     private func configureCollection() {
         collectionView.delegate = self
         collectionView.dataSource = self
